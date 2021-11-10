@@ -63,9 +63,11 @@ public class Base_Class {
 
 	}
 	
-	private static void scrollDown (WebElement element) {
+	
+	public static void scrollDown (WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		js.executeScript("window.scrollBy(0,4000)");
+		
 
 	}
 

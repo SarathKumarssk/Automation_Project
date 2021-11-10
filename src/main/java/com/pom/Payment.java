@@ -6,16 +6,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Payment {
+	private static final WebElement scrollDown = null;
+
 	public WebDriver driver;
-	
-	@FindBy(xpath="//a[@class='bankwire']")
+
+	@FindBy(xpath = "//a[@class='bankwire']")
 	public WebElement bankwire;
-	
-	@FindBy(xpath="(//button[@type='submit'])[2]")
+
+	@FindBy(xpath = "(//button[@type='submit'])[2]")
 	public WebElement placeorder;
 
 	public Payment(WebDriver driver8) {
-		this.driver=driver8;
+		this.driver = driver8;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -26,7 +28,5 @@ public class Payment {
 	public WebElement getPlaceorder() {
 		return placeorder;
 	}
-	
-	
 
 }

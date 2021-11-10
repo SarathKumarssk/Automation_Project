@@ -50,8 +50,6 @@ public class Runner_POM extends Base_Class {
 		clickOnElement(ship.getProceedshipping());
 		clickOnElement(pay.getBankwire());
 		clickOnElement(pay.getPlaceorder());
-
-		scrollDown(driver);
 		screenshot();
 
 	}
